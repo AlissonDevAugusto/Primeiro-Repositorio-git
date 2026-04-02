@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-weight: 400;
-    color: #00FF00;
+    color: #4d4086;
 }
 
 
@@ -87,6 +87,11 @@ button {
 
 .meu-button:active {
     background-color: red;
+}
+
+
+.meu-button:hover {
+    opacity: 50%;
 }
 
 
