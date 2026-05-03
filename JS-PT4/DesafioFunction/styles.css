@@ -1,0 +1,86 @@
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-image: url('./Pedra\,\ Papel\ e\ Tesoura\ Emoji\ Loop_720p\ \(1\).gif');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+#divFather {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    height: 250px;
+    width: 300px;
+}
+
+
+
+
+
+.divSom {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.buttons {
+    font-size: 30px;
+    width: 60px;
+    height: 75px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+.buttons:hover {
+    opacity: 0.8;
+}
+
+.buttons:active {
+    opacity: 0.4;
+}
+
+
+#closedHand  {
+    background-color: darkviolet;
+}
+
+#handRaised {
+    background-color: greenyellow;
+}
+
+#handOfVictory {
+    background-color:cornflowerblue
+}
+
+.result {
+    font-weight: bold;
+    color:darkgray
+}
+
+.pScore {
+    padding: 0;
+    margin-top: 2px;
+    margin-bottom: -1px;
+    font-weight: bolder;
+
+    
+}
+
+
+#span1 , #span2 {
+    color: red;
+}
