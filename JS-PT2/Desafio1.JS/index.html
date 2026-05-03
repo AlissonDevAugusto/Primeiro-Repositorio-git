@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Desafio1 JS </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+
+<body>
+
+    <img class="img-gif" src="./assets/logo (1).gif" alt="gif de troca">
+
+    <section>
+
+        <label>
+            Converter <b> de : </b>
+            <select>
+                <option> R$ Real Brasileiro </option>
+            </select>
+        </label>
+
+
+        <label>
+            Converter <b> para : </b>
+            <select class="select2">
+                <option value="dolar"> US$ Dolar Americano </option>
+                <option value="euro"> € Euro </option>
+                <option value="iene" id="coinIene" > ¥ Iene </option>
+                <option value="libra"> £ Libra </option>
+            </select>
+        </label>
+
+
+        <label>
+            <b> Valor : </b>
+            <input placeholder="ex : R$ 10.000,00 ">
+        </label>
+
+        <button> Converter </button>
+
+        <div class="div-father">
+
+            <div class="div-son">
+                <img class="img-flag" src="./assets/brasil 2.png" alt="moeda-R$">
+                <p class="divson-p-coin"> Real </p>
+                <p class="divson-p-value-to-convert"> R$ 0,00 </p>
+            </div>
+
+            <img class="img-arrow" src="./assets/Vector.png" alt="alternando-moeda">
+               
+            <div class="div-son">
+                <img class="img-flag" id="img-flag-tochange" src="./assets/estados-unidos (1) 1.png" alt="flag-coin">
+                <p class="divson-p-coin" id="p-coin-tochange"> Dolar Americano </p>
+                <p class="divson-p-value-converted"> US$ 0,00 </p>
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+
+<script src="./script.js"></script>
+
+</html>
