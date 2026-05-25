@@ -106,15 +106,20 @@ buttonConvert.addEventListener("click" , valueConvert)
  const buttonConvert = document.querySelector("button")
  const inputValue = document.querySelector("input")
  const select02 = document.querySelector(".select2")
- const dollarValue = 5.10
- const euroValue = 5.96
- const ieneValue = 0.031
- const libraValue = 6.75
+ 
  const valueToConvert = document.querySelector(".divson-p-value-to-convert")
  const valueConverted = document.querySelector(".divson-p-value-converted")
+ 
 
-function valueConvert() {
-    
+async function valueConvert() {
+
+    const data = await fetch("https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL").then(response => response.json())
+
+    const dollarValue = data.USDBRL.high
+    const euroValue = data.EURBRL.high
+    const ieneValue = 0.031
+    const libraValue = 6.75
+
     if (select02.value == "dolar") {
         valueConverted.innerHTML = new Intl.NumberFormat("en-US", {
             style: "currency",
