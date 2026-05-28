@@ -67,49 +67,49 @@ buttonConvert.addEventListener("click" , valueConvert)  */
 ///////////////////////////////////////////////////////////////////////////////////
 
 // 5 passo : 
- /* const buttonConvert = document.querySelector("button")
- const select02 = document.querySelector(".select2")
- const dollarValue = 5.10
- const euroValue = 5.96
-     comen->  const convertedValue = (inputValue / dollarValue) 
- const valueToConvert = document.querySelector(".divson-p-value-to-convert")
- const valueConverted = document.querySelector(".divson-p-value-converted")
+/* const buttonConvert = document.querySelector("button")
+const select02 = document.querySelector(".select2")
+const dollarValue = 5.10
+const euroValue = 5.96
+    comen->  const convertedValue = (inputValue / dollarValue) 
+const valueToConvert = document.querySelector(".divson-p-value-to-convert")
+const valueConverted = document.querySelector(".divson-p-value-converted")
 
 function valueConvert() {
-    const inputValue = document.querySelector("input").value 
+   const inputValue = document.querySelector("input").value 
 
-    if (select02.value == "dolar") {
-        valueConverted.innerHTML = new Intl.NumberFormat("en-US", {
-            style: "currency",
-            currency: "USD"
-        }).format(inputValue / dollarValue)
-    }
+   if (select02.value == "dolar") {
+       valueConverted.innerHTML = new Intl.NumberFormat("en-US", {
+           style: "currency",
+           currency: "USD"
+       }).format(inputValue / dollarValue)
+   }
 
-    if (select02.value == "euro") {
-        valueConverted.innerHTML = new Intl.NumberFormat("de-DE", {
-            style: "currency",
-            currency: "EUR"
-        }).format(inputValue / euroValue)
-    }
+   if (select02.value == "euro") {
+       valueConverted.innerHTML = new Intl.NumberFormat("de-DE", {
+           style: "currency",
+           currency: "EUR"
+       }).format(inputValue / euroValue)
+   }
 
-    valueToConvert.innerHTML = new Intl.NumberFormat("pt-BR", {
-        style: "currency",
-        currency: "BRL"
-    }).format(inputValue)
+   valueToConvert.innerHTML = new Intl.NumberFormat("pt-BR", {
+       style: "currency",
+       currency: "BRL"
+   }).format(inputValue)
 
 buttonConvert.addEventListener("click" , valueConvert)  
 } */
- 
+
 ///////////////////////////////////////////////////////////////////////////////////// 
 
 // 6 passo :
- const buttonConvert = document.querySelector("button")
- const inputValue = document.querySelector("input")
- const select02 = document.querySelector(".select2")
- 
- const valueToConvert = document.querySelector(".divson-p-value-to-convert")
- const valueConverted = document.querySelector(".divson-p-value-converted")
- 
+const buttonConvert = document.querySelector("button")
+const inputValue = document.querySelector("input")
+const select02 = document.querySelector(".select2")
+
+const valueToConvert = document.querySelector(".divson-p-value-to-convert")
+const valueConverted = document.querySelector(".divson-p-value-converted")
+
 
 async function valueConvert() {
 
@@ -136,14 +136,14 @@ async function valueConvert() {
 
     if (select02.value == "iene") {
         valueConverted.innerHTML = new Intl.NumberFormat("ja-JP", {
-            style: "currency" ,
+            style: "currency",
             currency: "JPY"
-            }).format(inputValue.value / ieneValue)
+        }).format(inputValue.value / ieneValue)
     }
 
     if (select02.value == "libra") {
-        valueConverted.innerHTML = new Intl.NumberFormat("en-GB" , {
-            style: "currency" ,
+        valueConverted.innerHTML = new Intl.NumberFormat("en-GB", {
+            style: "currency",
             currency: "GBP"
         }).format(inputValue.value / libraValue)
     }
@@ -155,37 +155,37 @@ async function valueConvert() {
 
 }
 
- const currencyName = document.getElementById("p-coin-tochange")
- const flagToChange = document.getElementById("img-flag-tochange")
+const currencyName = document.getElementById("p-coin-tochange")
+const flagToChange = document.getElementById("img-flag-tochange")
 
 function changeCurrency() {
-    
+
     if (select02.value == "dolar") {
-        currencyName.innerHTML = "Dolar Americano" ,
-        flagToChange.src ="./assets/estados-unidos (1) 1.png"
+        currencyName.innerHTML = "Dolar Americano",
+            flagToChange.src = "./assets/estados-unidos (1) 1.png"
     }
-    
+
     if (select02.value == "euro") {
-        currencyName.innerHTML = "Euro" ,
-        flagToChange.src = "./assets/Design sem nome 3.png"
+        currencyName.innerHTML = "Euro",
+            flagToChange.src = "./assets/Design sem nome 3.png"
     }
 
     if (select02.value == "iene") {
-        currencyName.innerHTML = "Iene" ,
-        flagToChange.src = "./assets/—Pngtree—japanese yen gold coins_13207615.png"
+        currencyName.innerHTML = "Iene",
+            flagToChange.src = "./assets/—Pngtree—japanese yen gold coins_13207615.png"
     }
-     if (select02.value == "libra") {
-        currencyName.innerHTML = "Libra" , 
-        flagToChange.src = "./assets/libra 1.png"
-     }
+    if (select02.value == "libra") {
+        currencyName.innerHTML = "Libra",
+            flagToChange.src = "./assets/libra 1.png"
+    }
 
     valueConvert()
 }
 
 
 
-select02.addEventListener("change" , changeCurrency )
-buttonConvert.addEventListener("click" , valueConvert)  
+select02.addEventListener("change", changeCurrency)
+buttonConvert.addEventListener("click", valueConvert)
 
 
 
