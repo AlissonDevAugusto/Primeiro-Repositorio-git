@@ -1,0 +1,32 @@
+{
+  "name": "estudos-node",
+  "version": "1.0.0",
+  "description": "vamo aprender e pratica conceitos node",
+  "homepage": "https://github.com/AlissonDevAugusto/Primeiro-Repositorio-git#readme",
+  "bugs": {
+    "url": "https://github.com/AlissonDevAugusto/Primeiro-Repositorio-git/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlissonDevAugusto/Primeiro-Repositorio-git.git"
+  },
+  "license": "ISC",
+  "author": "Alisson Augusto",
+  "type": "module",
+  "main": "Node.js",
+  "scripts": {
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "@prisma/client": "6.19",
+    "axios": "^1.16.1",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "styled-components": "^6.4.4",
+    "yarn": "^1.22.22"
+  },
+  "devDependencies": {
+    "prisma": "6.19"
+  }
+}

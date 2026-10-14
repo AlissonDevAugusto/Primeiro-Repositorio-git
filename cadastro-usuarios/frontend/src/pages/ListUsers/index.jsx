@@ -15,12 +15,18 @@ function ListUsers() {
     const navigate = useNavigate()
 
     const [users, setUsers] = useState([])
+    const [error, setError] = useState("")
 
     useEffect(() => {
         async function getUsers() {
-            const { data } = await api.get("/usuarios")
+            try {
+                const { data } = await api.get("/usuarios")
 
-            setUsers(data)
+                setUsers(data)
+                setError("")
+            } catch (error) {
+                setError(error.response?.data?.message || "Não foi possível consultar os usuários.")
+            }
         }
 
         getUsers()
@@ -42,6 +48,7 @@ function ListUsers() {
             <Topbackground />
 
             <Tittle> Listagem de Usuarios </Tittle>
+            {error && <p role="alert">{error}</p>}
             <ContainerUsers>
                 {users.map(user => (
                     <CardUsers key={user.id} >

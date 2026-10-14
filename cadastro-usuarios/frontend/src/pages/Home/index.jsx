@@ -54,7 +54,6 @@ function Home() {
   const InputName = useRef()
   const InputAge = useRef()
   const InputEmail = useRef()
-
   const navigate = useNavigate()
 
   async function registerNewUser() {
