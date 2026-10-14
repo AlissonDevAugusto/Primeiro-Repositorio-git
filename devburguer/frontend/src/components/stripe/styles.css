@@ -1,0 +1,91 @@
+#payment-form {
+  width: 100%;
+}
+
+.checkout-heading {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.checkout-kicker {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #61a120;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.checkout-heading h1 {
+  color: #333232;
+  font-family: 'Road Rage', sans-serif;
+  font-size: clamp(42px, 8vw, 60px);
+  font-weight: 400;
+  line-height: 0.95;
+}
+
+.checkout-heading p {
+  margin: 14px auto 0;
+  color: #686868;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+#payment-element {
+  margin-bottom: 24px;
+}
+
+.button {
+  width: 100%;
+  min-height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: #9758a6;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 8px 18px #9758a63d;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 180ms ease, transform 180ms ease, box-shadow 180ms ease;
+}
+
+.button:hover:not(:disabled) {
+  background: #6f357c;
+  box-shadow: 0 10px 22px #6f357c4d;
+  transform: translateY(-2px);
+}
+
+.button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+#payment-message {
+  margin-top: 16px;
+  padding: 12px 14px;
+  color: #8a3d3d;
+  background: #fff1f1;
+  border: 1px solid #f1d4d4;
+  border-radius: 10px;
+  font-size: 13px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 3px solid #ffffff66;
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: loading 800ms linear infinite;
+}
+
+@keyframes loading {
+  to { transform: rotate(360deg); }
+}
